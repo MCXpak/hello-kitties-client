@@ -58,7 +58,7 @@ a:link {
     text-decoration: none; 
 }
 
-li:hover {
+.nav:hover {
     color: #FBC2C3;
 }
 
@@ -73,7 +73,7 @@ li:hover {
     grid-template-rows: repeat(2, 450px);
     gap: 20px;
     margin-top: 30px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-items: center;
     justify-content: center;
     align-items: stretch;
@@ -124,17 +124,32 @@ img {
     margin: 2%;
     background-color: #9C849B;
     border-radius: 5px;
-    height: 140px;
+    min-height: 140px;
+    justify-content: center;
+    /* flex-direction: row; */
 }
 
-.breed {
+.row {
+    display: flex;
+    flex-direction: row;
+    
+}
+.icon {
     width: 30px;
-    height: auto;
-    padding-left: 10px;
+    height: 30px;
+    padding-left: 2px;
     padding-top: 10px;
+    text-align: left;
 }
 
-.breed-description {
-    display: inline-block;
-    position: relative;
+.description {
+    text-align: left;
+    bottom: 5px
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
