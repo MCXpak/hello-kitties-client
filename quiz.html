@@ -12,24 +12,333 @@
     <title>Quiz</title>
 </head>
 <body>
-    <img src=paw-solid.svg class="button" id="previous"></img>
-    <img src=paw-solid.svg class="button" id="next"></img>
-    <div id="container">
+    <img src=assets/paw-solid.svg class="button" id="previous"></img>
+    <img src=assets/paw-solid.svg class="button" id="next"></img>
+    <form id="container">
         <div class="question-div q1">
-            Text
+            <div class="question-text">
+                <p>I often go out to socialise</p>
+            </div>
+            <div class="question-form">
+                    <div class="question-option" >
+                        <label for="not-very-often">Not very often</label>
+                        <input type="radio" value="1" name="action1">
+                    </div>
+                    <div class="question-option" >
+                        <label for="not-often">Not often</label>
+                        <input type="radio" value="2" name="action1">
+                    </div>
+                    <div class="question-option" >
+                        <label for="neutral">Neutral</label>
+                        <input type="radio" value="3" name="action1">
+                    </div>
+                    <div class="question-option" >
+                        <label for="often">Often</label>
+                        <input type="radio" value="4" name="action1">
+                    </div>
+                    <div class="question-option" >
+                        <label for="very-often">Very Often</label>
+                    <input type="radio" value="5" name="action1">
+                    </div>
+                </div>
         </div>
         <div class="question-div q2">
-            Text
+            <div class="question-text">
+                <p>I seek affection from others</p>
+            </div>
+            <div class="question-form">
+                    <div class="question-option" >
+                        <label for="not-very-often">Not very often</label>
+                        <input type="radio" name="action2" class="not-very-often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="not-often">Not often</label>
+                        <input type="radio" name="action2" class="not-often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="neutral">Neutral</label>
+                        <input type="radio" name="action2" class="neutral">
+                    </div>
+                    <div class="question-option" >
+                        <label for="often">Often</label>
+                        <input type="radio" name="action2" class="often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="very-often">Very Often</label>
+                    <input type="radio" name="action2" class="very-often">
+                    </div>
+                </div>
         </div>
         <div class="question-div q3">
-            Text
+            <div class="question-text">
+                <p>I have/want to have kids</p>
+            </div>
+            <div class="question-form">
+                    <div class="question-option" >
+                        <label for="not-very-often">Not very often</label>
+                        <input type="radio" name="action3" class="not-very-often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="not-often">Not often</label>
+                        <input type="radio" name="action3" class="not-often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="neutral">Neutral</label>
+                        <input type="radio" name="action3" class="neutral">
+                    </div>
+                    <div class="question-option" >
+                        <label for="often">Often</label>
+                        <input type="radio" name="action3" class="often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="very-often">Very Often</label>
+                    <input type="radio" name="action3" class="very-often">
+                    </div>
+                </div>
         </div>
         <div class="question-div q4">
-            Text
+            <div class="question-text">
+                <p>I would enjoy having different pets at home</p>
+            </div>
+            <div class="question-form">
+                    <div class="question-option" >
+                        <label for="not-very-often"></label>
+                        <input type="radio" name="action4" class="not-very-often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="not-often">Not often</label>
+                        <input type="radio" name="action4" class="not-often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="neutral">Neutral</label>
+                        <input type="radio" name="action4" class="neutral">
+                    </div>
+                    <div class="question-option" >
+                        <label for="often">Often</label>
+                        <input type="radio" name="action4" class="often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="very-often">Very Often</label>
+                    <input type="radio" name="action4" class="very-often">
+                    </div>
+                </div>
         </div>
         <div class="question-div q5">
-            Text
+            <div class="question-text">
+                <p>I am an energetic person</p>
+            </div>
+            <div class="question-form">
+                    <div class="question-option" >
+                        <label for="not-very-often"></label>
+                        <input type="radio" name="action5" class="not-very-often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="not-often">Not often</label>
+                        <input type="radio" name="action5" class="not-often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="neutral">Neutral</label>
+                        <input type="radio" name="action5" class="neutral">
+                    </div>
+                    <div class="question-option" >
+                        <label for="often">Often</label>
+                        <input type="radio" name="action5" class="often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="very-often">Very Often</label>
+                    <input type="radio" name="action5" class="very-often">
+                    </div>
+                </div>
         </div>
-    </div>
+        <div class="question-div q6">
+            <div class="question-text">
+                <p>I look after my self image often</p>
+            </div>
+            <div class="question-form">
+                    <div class="question-option" >
+                        <label for="not-very-often"></label>
+                        <input type="radio" name="action6" class="not-very-often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="not-often">Not often</label>
+                        <input type="radio" name="action6" class="not-often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="neutral">Neutral</label>
+                        <input type="radio" name="action6" class="neutral">
+                    </div>
+                    <div class="question-option" >
+                        <label for="often">Often</label>
+                        <input type="radio" name="action6" class="often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="very-often">Very Often</label>
+                    <input type="radio" name="action6" class="very-often">
+                    </div>
+                </div>
+        </div>
+        <div class="question-div q7">
+            <div class="question-text">
+                <p>I often take pride in looking after others</p>
+            </div>
+            <div class="question-form">
+                    <div class="question-option" >
+                        <label for="not-very-often"></label>
+                        <input type="radio" name="action7" class="not-very-often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="not-often">Not often</label>
+                        <input type="radio" name="action7" class="not-often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="neutral">Neutral</label>
+                        <input type="radio" name="action7" class="neutral">
+                    </div>
+                    <div class="question-option" >
+                        <label for="often">Often</label>
+                        <input type="radio" name="action7" class="often">
+                    </div>
+                    <div class="question-option" >
+                        <label for="very-often">Very Often</label>
+                    <input type="radio" name="action7" class="very-often">
+                    </div>
+                </div>
+        </div>
+        <div class="question-div q8">
+            <div class="question-text">
+                <p>I consider myself intelligent</p>
+            </div>
+            <div class="question-form">
+                <div class="question-option" >
+                    <label for="not-very-often"></label>
+                    <input type="radio" name="action8" class="not-very-often">
+                </div>
+                <div class="question-option" >
+                    <label for="not-often">Not often</label>
+                    <input type="radio" name="action8" class="not-often">
+                </div>
+                <div class="question-option" >
+                    <label for="neutral">Neutral</label>
+                    <input type="radio" name="action8" class="neutral">
+                </div>
+                <div class="question-option" >
+                    <label for="often">Often</label>
+                    <input type="radio" name="action8" class="often">
+                </div>
+                <div class="question-option" >
+                    <label for="very-often">Very Often</label>
+                <input type="radio" name="action8" class="very-often">
+                </div>
+            </div>
+        </div>
+        <div class="question-div q9">
+            <div class="question-text">
+                <p>I cannot stand mess in my home</p>
+            </div>
+            <div class="question-form">
+                <div class="question-option" >
+                    <label for="not-very-often"></label>
+                    <input type="radio" name="action9" class="not-very-often">
+                </div>
+                <div class="question-option" >
+                    <label for="not-often">Not often</label>
+                    <input type="radio" name="action9" class="not-often">
+                </div>
+                <div class="question-option" >
+                    <label for="neutral">Neutral</label>
+                    <input type="radio" name="action9" class="neutral">
+                </div>
+                <div class="question-option" >
+                    <label for="often">Often</label>
+                    <input type="radio" name="action9" class="often">
+                </div>
+                <div class="question-option" >
+                    <label for="very-often">Very Often</label>
+                <input type="radio" name="action9" class="very-often">
+                </div>
+            </div>
+        </div>
+        <div class="question-div q10">
+            <div class="question-text">
+                <p>I'd rather stay at home than go out</p>
+            </div>
+            <div class="question-form">
+                <div class="question-option" >
+                    <label for="not-very-often"></label>
+                    <input type="radio" name="action10" class="not-very-often">
+                </div>
+                <div class="question-option" >
+                    <label for="not-often">Not often</label>
+                    <input type="radio" name="action10" class="not-often">
+                </div>
+                <div class="question-option" >
+                    <label for="neutral">Neutral</label>
+                    <input type="radio" name="action10" class="neutral">
+                </div>
+                <div class="question-option" >
+                    <label for="often">Often</label>
+                    <input type="radio" name="action10" class="often">
+                </div>
+                <div class="question-option" >
+                    <label for="very-often">Very Often</label>
+                <input type="radio" name="action10" class="very-often">
+                </div>
+            </div>
+        </div>
+        <div class="question-div q11">
+            <div class="question-text">
+                <p>I often like having guests at home</p>
+            </div>
+            <div class="question-form">
+                <div class="question-option" >
+                    <label for="not-very-often"></label>
+                    <input type="radio" name="action11" class="not-very-often">
+                </div>
+                <div class="question-option" >
+                    <label for="not-often">Not often</label>
+                    <input type="radio" name="action11" class="not-often">
+                </div>
+                <div class="question-option" >
+                    <label for="neutral">Neutral</label>
+                    <input type="radio" name="action11" class="neutral">
+                </div>
+                <div class="question-option" >
+                    <label for="often">Often</label>
+                    <input type="radio" name="action11" class="often">
+                </div>
+                <div class="question-option" >
+                    <label for="very-often">Very Often</label>
+                <input type="radio" name="action11" class="very-often">
+                </div>
+            </div>
+        </div>
+        <div class="question-div q12">
+            <div class="question-text">
+                <p>I often like having guests at home</p>
+            </div>
+            <div class="question-form">
+                <div class="question-option" >
+                    <label for="not-very-often"></label>
+                    <input type="radio" name="action12" class="not-very-often">
+                </div>
+                <div class="question-option" >
+                    <label for="not-often">Not often</label>
+                    <input type="radio" name="action12" class="not-often">
+                </div>
+                <div class="question-option" >
+                    <label for="neutral">Neutral</label>
+                    <input type="radio" name="action12" class="neutral">
+                </div>
+                <div class="question-option" >
+                    <label for="often">Often</label>
+                    <input type="radio" name="action12" class="often">
+                </div>
+                <div class="question-option" >
+                    <label for="very-often">Very Often</label>
+                <input type="radio" name="action12" class="very-often">
+                </div>
+            </div>
+        </div>
+    </form>
 </body>
 </html>
