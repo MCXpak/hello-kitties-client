@@ -1,0 +1,93 @@
+html {
+    background-color: #FDFAEE;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    overflow: clip;
+}
+
+#primaryDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    height: 90vh;
+    min-width: 100vw;
+}
+
+#rejectDiv {
+    flex-grow: 1;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #642862;
+}
+
+#saveDiv {
+    flex-grow: 1;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #642862;
+}
+
+
+#displayDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1.5;
+}
+
+#contentContainer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #966F9B;
+    height: 100%;
+    width: 100%;
+    border-radius: 2%;
+}
+
+
+#name-imgDiv {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    align-items: center;
+    background-color: #D2BAD1;
+    width: 80%;
+    margin: 2%;
+    border-radius: 2%;
+}
+
+#name {
+    display: flex;
+    justify-content: center;
+    flex-grow:1;
+    width: 90%;
+    background-color: #642862;
+    margin: 2%;
+    color: white;
+    font-size: 50px;
+}
+
+#img {
+    display: flex;
+    justify-content: center;
+    flex-grow:8;
+    width: 90%;
+    background-color: #642862;
+    margin: 2%;
+    color: white;
+    font-size: 50px;
+}
+
+#descriptionDiv {
+    flex-grow:1;
+    background-color: #D2BAD1;
+    width: 80%;
+    margin: 2%;
+    border-radius: 2%;
+}
