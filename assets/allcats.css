@@ -1,0 +1,60 @@
+:root {
+    --floralwhite: #FDFAEE;
+    --spanishpink: #FBC2C3;
+    --frenchlilac: #966F9B;
+    --cybergrape: #6D4776;
+    --mountbattenpink: #9C849B;
+
+}
+
+html {
+    background-color: var(--floralwhite);
+    font-family: "Fredoka One", cursive;
+}
+
+body {
+    margin: 0 auto;
+}
+
+#logo {
+    margin-left: 20px;
+}
+#container-header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    will-change: transform;
+    background-color: var(--spanishpink);
+    /* border: 1px solid black; */
+}
+
+.navigation-bar {
+    list-style: none;
+    display: flex;
+    padding-left: 10px;
+    color: var(--frenchlilac);
+}
+
+.navigation-bar a {
+    display: table;
+    padding: 0px 20px;
+}
+
+.navigation-bar li {
+    background-color: var(--frenchlilac);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    color: var(--floralwhite);
+}
+
+a:link { 
+    text-decoration: none; 
+}
