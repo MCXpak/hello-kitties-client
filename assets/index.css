@@ -1,14 +1,22 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 body {
   background-color: #fdfaee;
   margin: auto;
   padding: 20px;
-  width: 50%;
+  width: 70%;
   text-align: center;
   font-family: "Fredoka One", cursive;
+  /* position: relative; */
+  /* top: 50%;
+  transform: translate(0, +20%); */
 }
 
 .paw {
-  height: 150px;
+  height: 200px;
   filter: invert(82%) sepia(14%) saturate(328%) hue-rotate(253deg)
     brightness(95%) contrast(84%);
 }
@@ -35,4 +43,28 @@ h2 {
 h3 {
   color: #d2bad1;
   font-size: 18pt;
+}
+
+.second {
+  color: #fdfaee;
+  background-color: #d2bad1;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 24pt;
+  text-align: center;
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.container {
+  padding: 10%;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
 }
