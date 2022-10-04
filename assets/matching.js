@@ -95,11 +95,11 @@ const returnPosition = () => {
 likeBtn.addEventListener("click", async () => {
     data = fetchData();
     moveRight();
-    await sleep(500)
+    await sleep(400)
     deleteDiv(description);
     removeImg()
     farLeft();
-    await sleep(500)
+    await sleep(400)
     index ++
     displayData(index);
 
@@ -110,7 +110,7 @@ rejectBtn.addEventListener("click", async () => {
     moveLeft()
     deleteDiv(description);
     removeImg();
-    await sleep(1000)
+    await sleep(200)
     index ++
     displayData(index);
 
