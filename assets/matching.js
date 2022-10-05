@@ -2,10 +2,10 @@ const likeBtn = document.getElementById("saveBtn");
 const rejectBtn = document.getElementById("rejectBtn")
 const dispDiv = document.getElementById("displayDiv")
 const nameText = document.getElementById("name");
-// const img = document.getElementById("img");
 const description = document.getElementById("descriptionDiv");
 const imgInsert = document.getElementById("contentContainer")
-
+const nameImg = document.getElementById("name-imgDiv")
+const description1 = document.getElementById("description1")
 let index = 0
     
 const fetchData = async () => {
@@ -14,13 +14,22 @@ const fetchData = async () => {
     return data;
 }
 
+const breakEl = (element) => {
+    const br = document.createElement("br")
+    element.appendChild(br)
+}
 
 const newDiv = (value, index, key) => {
     const div = document.createElement("div")
+
     div.setAttribute("id", `${key}${index}`)
     div.className = "description"
     div.textContent = `${key}: ${value}`
-    description.appendChild(div)
+    // description1.appendChild(br)
+    // description1.appendChild(br)
+    breakEl(description1)
+
+    description1.appendChild(div)
 }
 
 const deleteDiv = (element) => {
@@ -58,6 +67,8 @@ const displayData = async (index) => {
         dispDiv.appendChild(div1)
     } else {
         nameText.textContent = cardContent["name"]
+        breakEl(description1)
+        breakEl(description1)
         newDiv(cardContent["age"], index, "Age")
         newDiv(cardContent["color"], index, "Colour")
         newDiv(cardContent["favFood"], index, "Favourite Food")
@@ -96,7 +107,7 @@ likeBtn.addEventListener("click", async () => {
     data = fetchData();
     moveRight();
     await sleep(400)
-    deleteDiv(description);
+    deleteDiv(description1);
     removeImg()
     farLeft();
     await sleep(400)
@@ -110,7 +121,7 @@ rejectBtn.addEventListener("click", async () => {
     moveLeft()
     deleteDiv(description);
     removeImg();
-    await sleep(200)
+    await sleep(400)
     index ++
     displayData(index);
 
