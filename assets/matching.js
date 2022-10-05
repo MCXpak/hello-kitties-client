@@ -119,7 +119,7 @@ likeBtn.addEventListener("click", async () => {
 
 rejectBtn.addEventListener("click", async () => {
     moveLeft()
-    deleteDiv(description);
+    deleteDiv(description1);
     removeImg();
     await sleep(400)
     index ++

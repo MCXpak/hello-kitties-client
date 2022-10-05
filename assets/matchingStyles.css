@@ -182,34 +182,33 @@ body {
 
 }
 
-#paw1 {
-    transform: rotate(-90deg);
-    filter: invert(82%) sepia(14%) saturate(328%) hue-rotate(253deg)
-    brightness(95%) contrast(84%);
-    z-index: 0;
-    position: relative;
-    height:100%;
-    width:100%;
-
+.paw {
+    filter: invert(55%) sepia(14%) saturate(984%) hue-rotate(246deg)
+    brightness(84%) contrast(87%);
 }
-
-#paw2 {
-    transform: rotate(90deg);
-    filter: invert(82%) sepia(14%) saturate(328%) hue-rotate(253deg)
-    brightness(95%) contrast(84%);
-    z-index:0;
-    position: relative;
-    height:100%;
-    width:100%;
-
-}
-
 .paw:hover {
     filter: invert(82%) sepia(14%) saturate(328%) hue-rotate(253deg)
-      brightness(95%) contrast(84%) drop-shadow(3px 5px 2px rgba(150, 111, 155));
+    brightness(95%) contrast(84%) drop-shadow(3px 5px 2px rgba(150, 111, 155));
     cursor: pointer;
 }
-
+#paw1 {
+    transform: rotate(-90deg);
+    /* filter: invert(82%) sepia(14%) saturate(328%) hue-rotate(253deg)
+        brightness(95%) contrast(84%); */
+    z-index: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#paw2 {
+    transform: rotate(90deg);
+    /* filter: invert(82%) sepia(14%) saturate(328%) hue-rotate(253deg)
+        brightness(95%) contrast(84%); */
+    z-index: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
 #saveBtn {
     display: flex;
     align-items: center;
