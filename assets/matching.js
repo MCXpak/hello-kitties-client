@@ -1,10 +1,10 @@
-const likeBtn = document.getElementById("paw2");
-const rejectBtn = document.getElementById("paw1")
+const likeBtn = document.getElementById("saveBtn");
+const rejectBtn = document.getElementById("rejectBtn")
 const dispDiv = document.getElementById("displayDiv")
 const nameText = document.getElementById("name");
 // const img = document.getElementById("img");
 const description = document.getElementById("descriptionDiv");
-const imgInsert = document.getElementById("name-imgDiv")
+const imgInsert = document.getElementById("contentContainer")
 
 let index = 0
     
@@ -54,7 +54,7 @@ const displayData = async (index) => {
         deleteDiv(dispDiv)
         const div1 = document.createElement("div");
         div1.className = "noMore";
-        div1.textContent = "NO MORE CATS"
+        div1.textContent = "NO MORE CATS TO SEE"
         dispDiv.appendChild(div1)
     } else {
         nameText.textContent = cardContent["name"]
@@ -95,11 +95,11 @@ const returnPosition = () => {
 likeBtn.addEventListener("click", async () => {
     data = fetchData();
     moveRight();
-    await sleep(500)
+    await sleep(400)
     deleteDiv(description);
     removeImg()
     farLeft();
-    await sleep(500)
+    await sleep(400)
     index ++
     displayData(index);
 
@@ -110,7 +110,7 @@ rejectBtn.addEventListener("click", async () => {
     moveLeft()
     deleteDiv(description);
     removeImg();
-    await sleep(1000)
+    await sleep(200)
     index ++
     displayData(index);
 
