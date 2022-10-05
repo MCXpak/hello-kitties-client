@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap");
+
+.cat-box {
+    cursor: pointer;
+}
+
+
+
 :root {
     --floralwhite: #FDFAEE;
     --spanishpink: #FBC2C3;
@@ -15,9 +23,18 @@ body {
     margin: 0 auto;
 }
 
-#logo {
+
+
+/* #logo {
     margin-left: 20px;
-}
+} */
+
+#logo {
+    max-height: 70px;
+    padding-left: 10px;
+    width: auto;
+  }
+
 #container-header {
     height: 70px;
     width: 100%;
