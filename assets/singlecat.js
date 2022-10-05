@@ -5,7 +5,7 @@ function getCatId() {
 }
 
 
-async function getMonsterbyID(id) {
+async function getCatbyID(id) {
 
     try {
         // reach out to the API
@@ -24,7 +24,7 @@ async function getMonsterbyID(id) {
 async function displayMonsterData(id){
     const cat = await getMonsterbyID(id);
 
-    const ul = document.querySelector('ul');
+    const ul = document.querySelector('#data');
 
     for (let key in cat){
         const li = document.createElement('li');

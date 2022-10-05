@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+:root {
+--floralwhite: #fdfaee;
+--spanishpink: #fbc2c3;
+--frenchlilac: #966f9b;
+--cybergrape: #6d4776;
+--mountbattenpink: #9c849b;
+}
+
+html {
+font-family: "Fredoka One", cursive;
+background-color: #fdfaee;
+text-align: center;
+}
+
+#container-header {
+height: 70px;
+width: 100vw;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+top: 0;
+will-change: transform;
+background-color: var(--spanishpink);
+/* border: 1px solid black; */
+}
+
+.navigation-bar {
+list-style: none;
+display: flex;
+padding-left: 10px;
+color: var(--frenchlilac);
+}
+
+.navigation-bar a {
+display: table;
+padding: 0px 20px;
+}
+
+.navigation-bar li {
+background-color: var(--frenchlilac);
+border-radius: 5px;
+display: flex;
+justify-content: center;
+width: 150px;
+height: 40px;
+align-items: center;
+color: var(--floralwhite);
+}
+
+.navigation-bar a:link {
+text-decoration: none;
+}
+
+.navigation-bar li:hover {
+color: #fbc2c3;
+}
+
+#logo {
+max-height: 70px;
+padding-left: 10px;
+}
+
+body {
+margin: 0 auto;
+}
+
+#cat {
+    
+    height: 50vh;
+    width: 50vh;
+    background-color: var(--frenchlilac);
+}
