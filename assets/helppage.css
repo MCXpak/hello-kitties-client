@@ -95,31 +95,70 @@ h1 {
   background-color: var(--cybergrape);
   height: 60vh;
   padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: var(--mountbattenpink) solid 5px;
   flex: 1;
   transition: 1s;
+  border-radius: 20px;
 }
 
 .box:hover {
   flex: 3;
 }
 
+.donate {
+  background-color: var(--mountbattenpink);
+  color: var(--floralwhite);
+  font-size: 40px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
 #donate {
   background-image: url("./images/donate.png");
+  background-position: center;
   background-repeat: no-repeat;
 }
 
+.volunteer {
+  background-color: var(--mountbattenpink);
+  color: var(--floralwhite);
+  font-size: 32px;
+  border-radius: 10px;
+  padding: 5px;
+}
 #volunteer {
   background-image: url("./images/volunteer.png");
+  background-position: center;
   background-repeat: no-repeat;
+}
+
+.guides {
+  background-color: var(--mountbattenpink);
+  color: var(--floralwhite);
+  font-size: 40px;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 #guides {
   background-image: url("./images/guides.png");
+  background-position: center;
   background-repeat: no-repeat;
+}
+
+.merch {
+  background-color: var(--mountbattenpink);
+  color: var(--floralwhite);
+  font-size: 40px;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 #merch {
   background-image: url("./images/merch.png");
+  background-position: center;
   background-repeat: no-repeat;
 }
