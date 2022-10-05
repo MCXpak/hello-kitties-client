@@ -13,6 +13,7 @@ body {
 #container {
     background-image: url('./yarn.png');
     background-size: contain;
+    background-repeat: no-repeat;
     background-attachment: local;
     max-height: 100vh;
     overflow-y: scroll;
@@ -33,8 +34,8 @@ body {
     background-color: #966F9B;
     box-shadow: 0 0 2px black;
     padding: 10vh 20vh;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10vh;
+    margin-right: 10vh;
     border-radius: 15px;
 }
 
@@ -74,6 +75,29 @@ body {
 }
 
 .question-text p {
-    font-size: 40px;
-
+    font-size: 60px;
 }
+
+label {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+#quiz-submit{
+    position: absolute;
+    bottom: 15vh;
+    right: 20vh;
+}
+
+.fa-circle-arrow-right {
+    opacity: 1;
+    transform: scale(10);
+    transition: ease-out 0.5s;
+    filter: invert(55%) sepia(14%) saturate(984%) hue-rotate(246deg) brightness(84%) contrast(87%);
+}
+
+.fa-circle-arrow-right:hover {
+    transform: scale(11);
+    transition: ease-out 0.5s;
+    filter: invert(55%) sepia(14%) saturate(984%) hue-rotate(246deg) brightness(84%) contrast(87%);
+}
+
