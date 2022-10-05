@@ -1,14 +1,78 @@
+:root {
+    --floralwhite: #fdfaee;
+    --spanishpink: #fbc2c3;
+    --frenchlilac: #966f9b;
+    --cybergrape: #6d4776;
+    --mountbattenpink: #9c849b;
+  }
+  
+
 body {
     font-family: "Fredoka One", cursive;
     margin: 0;
     padding: 0;
     height: 100vh;
+    
+    background-color: #FDFAEE;
+    accent-color: var(--checked-color);
+}
+
+#outer-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
-    background-color: #FDFAEE;
 }
+
+#container-header {
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    will-change: transform;
+    background-color: var(--spanishpink);
+    /* border: 1px solid black; */
+}
+
+.navigation-bar {
+    list-style: none;
+    display: flex;
+    padding-left: 10px;
+    color: var(--frenchlilac);
+}
+
+.navigation-bar a {
+    display: table;
+    padding: 0px 20px;
+}
+
+.navigation-bar li {
+    background-color: var(--frenchlilac);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    color: var(--floralwhite);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+li:hover {
+    color: #fbc2c3;
+}
+
+#logo {
+    max-height: 70px;
+    padding-left: 10px;
+  }
+
 
 #container {
     background-image: url('./yarn.png');
@@ -44,7 +108,7 @@ body {
 }
 
 #next {
-    bottom: 200px;
+    bottom: 15vh;
     transform: rotate(180deg);
 }
 
@@ -89,7 +153,8 @@ label {
 }
 
 .fa-circle-arrow-right {
-    opacity: 1;
+    opacity: 0;
+    pointer-events: none;
     transform: scale(10);
     transition: ease-out 0.5s;
     filter: invert(55%) sepia(14%) saturate(984%) hue-rotate(246deg) brightness(84%) contrast(87%);
@@ -101,3 +166,7 @@ label {
     filter: invert(55%) sepia(14%) saturate(984%) hue-rotate(246deg) brightness(84%) contrast(87%);
 }
 
+input[type="radio"] {
+    transform: scale(2);
+    filter: invert(82%) sepia(11%) saturate(813%) hue-rotate(250deg) brightness(98%) contrast(102%);
+}
