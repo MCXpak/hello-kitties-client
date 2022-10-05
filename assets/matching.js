@@ -9,7 +9,7 @@ const description1 = document.getElementById("description1")
 let index = 0
     
 const fetchData = async () => {
-    const response = await fetch(`http://localhost:3000/cats`)
+    const response = await fetch(`http://localhost:3000/tinder`)
     const data = await response.json();
     return data;
 }
@@ -67,9 +67,9 @@ const displayData = async (index) => {
         dispDiv.appendChild(div1)
     } else {
         nameText.textContent = cardContent["name"]
-        breakEl(description1)
-        breakEl(description1)
+
         newDiv(cardContent["age"], index, "Age")
+        newDiv(cardContent["gender"], index, "Gender")
         newDiv(cardContent["color"], index, "Colour")
         newDiv(cardContent["favFood"], index, "Favourite Food")
         newDiv(cardContent["breed"], index, "Breed")
