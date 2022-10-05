@@ -70,10 +70,15 @@ body {
   margin: 0 auto;
 }
 
+#logo {
+  max-height: 70px;
+  padding-left: 10px;
+}
+
 .paw {
   height: 200px;
-  filter: invert(82%) sepia(14%) saturate(328%) hue-rotate(253deg)
-    brightness(95%) contrast(84%);
+  filter: invert(55%) sepia(14%) saturate(984%) hue-rotate(246deg)
+    brightness(84%) contrast(87%);
 }
 
 .paw:hover {

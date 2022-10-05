@@ -16,41 +16,45 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <header>
-        <div class="navContainer">
-
-            <img src="./assets/paw-solid.svg" alt="logo" class="logo">
-
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </nav>
-
-        </div>
-    </header> -->
+    <header id="container-header">
+        <img id="logo" src="./assets/logo.png" alt="logo">
+        <ul class="navigation-bar">
+            <a href="#quiz">
+                <li>TAKE OUR QUIZ</li>
+            </a>
+            <a href="#allcats">
+                <li>OUR CATS</li>
+            </a>
+            <a href="#help">
+                <li>HOW CAN I HELP</li>
+            </a>
+        </ul>
+    </header>
     <div id="mainContainer">
         <div id="primaryDiv">
             <div id="rejectDiv">
-                <img class="paw" id="paw1" src="./assets/paw-solid.svg" alt="Paw" />            </div>
+                <div id="rejectBtn">
+                    <div id="reject">Not for me!</div>
+                    <img class="paw" id="paw1" src="./assets/paw-solid.svg" alt="Paw" />
+                </div>
+            </div>
             <div id="displayDiv">
-                <div id="contentContainer">
                     
-                    <div id="name-imgDiv">
-                        <div id="name">
-                            Name of Cat
-                        </div>
+                <div id="name-imgDiv">
+                    <div id="name">
+                        Name of Cat
                     </div>
-                    <div id="descriptionDiv">
-    
-                    </div>
+                </div>
+                <div id="contentContainer"></div>
+                <div id="descriptionDiv">
+
                 </div>
             </div>
             <div id="saveDiv">
-                <img class="paw" id="paw2" src="./assets/paw-solid.svg" alt="Paw" />
+                <div id ="saveBtn">
+                    <div id ="save">Let's save this!</div>
+                    <img class="paw" id="paw2" src="./assets/paw-solid.svg" alt="Paw" />
+                </div>
             </div>
         </div>
     </div>
