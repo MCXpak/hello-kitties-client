@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --floralwhite: #fdfaee;
+  --spanishpink: #fbc2c3;
+  --frenchlilac: #966f9b;
+  --cybergrape: #6d4776;
+  --mountbattenpink: #9c849b;
+}
+
+html {
+  font-family: "Fredoka One", cursive;
+  background-color: #fdfaee;
+  text-align: center;
+}
+
+#container-header {
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  will-change: transform;
+  background-color: var(--spanishpink);
+  /* border: 1px solid black; */
+}
+
+.navigation-bar {
+  list-style: none;
+  display: flex;
+  padding-left: 10px;
+  color: var(--frenchlilac);
+}
+
+.navigation-bar a {
+  display: table;
+  padding: 0px 20px;
+}
+
+.navigation-bar li {
+  background-color: var(--frenchlilac);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+  color: var(--floralwhite);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+li:hover {
+  color: #fbc2c3;
+}
+
+.body {
+  margin: 0 auto;
+  padding: 30px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+#logo {
+  max-height: 70px;
+  padding-left: 10px;
+}
+
+#container {
+  background-color: #fdfaee;
+  margin: 10px;
+}
+
+/* Grid */
+#calendar {
+  max-height: 90vh;
+  margin-top: 10vh;
+  padding: 10px;
+  border: solid;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 1px;
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+/* Days */
+#monday {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#tuesday {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#wednesday {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#thursday {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+#friday {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+#saturday {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+#sunday {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+#monday {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/* Times */
+#NineAm {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#TenAm {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#ElevenAm {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#TwelvePm {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#OnePm {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#TwoPm {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#ThreePm {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#FourPm {
+  grid-column-start: 9;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+
+
+/* Activities */
+#cat-bathing {
+  grid-column-start: 9;
+  grid-column-end: 10;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#dog-tricks {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#parrot-speech {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+/* Activity Styling */
+
+.class {
+  background-color: #6d4776;
+  border-radius: 10px;
+
+}
+
+

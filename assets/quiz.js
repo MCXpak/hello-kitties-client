@@ -34,20 +34,22 @@ let sections = gsap.utils.toArray(".question-div");
 
 let formAnswerArray = []
 
-//Button to move to
+//Button to move to next question
 next.addEventListener('click', () => {
     if(index < sections.length-1){
         index++;
         console.log(index)
-        gsap.to(container, { duration: 1, scrollTo: { y: sections[index], offsetY: window.innerHeight/2 - 210 } })
+        gsap.to(container, { duration: 1, scrollTo: { y: sections[index], offsetY: container.getBoundingClientRect().height/2 - sections[index].getBoundingClientRect().height/2}})
+        console.log(container.getBoundingClientRect().height/2 - sections[index].getBoundingClientRect().height/2)
     }
 })
 
+//Button to move to previous question
 previous.addEventListener('click', () => {
     if(index > 0){
         index--;
         console.log(index)
-        gsap.to(container, { duration: 1, scrollTo: { y: sections[index], offsetY: window.innerHeight/2 - 210 } })
+        gsap.to(container, { duration: 1, scrollTo: { y: sections[index], offsetY: container.getBoundingClientRect().height/2 - sections[index].getBoundingClientRect().height/2} })
     }
 })
 
@@ -60,19 +62,19 @@ const onFormSubmit = () => {
 }
 
 submitButton.addEventListener('click', (e) => {
-
+    sendData(e)
 })
 
 const sendData = async (e) => {
     e.preventDefault()
     formAnswerArray = onFormSubmit()
     console.log(formAnswerArray)
-    let testArr = ['3', '4', '2', '4', '5', '1', '3', '5', '2', '4', '5', '4']
+    //let testArr = ['3', '4', '2', '4', '5', '1', '3', '5', '2', '4', '5', '4']
     let obj = createDataObject(formAnswerArray)
     console.log(obj)
 
     const options = {
-        method: 'POST',
+        method: 'PUT',
         headers: {
             'Content-type': 'application/json'
         },
@@ -80,7 +82,9 @@ const sendData = async (e) => {
     }
 
     const res = await fetch("http://localhost:3000/matching", options)
-    console.log(res.json())
+    const jsonRes = await res.json()
+    console.log(jsonRes)
+    window.location.href = ("http://localhost:5500/matching.html")
 }
 
 container.addEventListener('scroll', () => {
@@ -96,6 +100,7 @@ container.addEventListener('scroll', () => {
     }
     if(index == sections.length-1){
         submitButton.style.opacity = 1;
+        submitButton.style.pointerEvents = "auto";
     }
 })
 
@@ -106,9 +111,6 @@ const createDataObject = (arr) => {
     })
     return obj
 }
-
-
-//localhost:3000/matching
 
 
 
