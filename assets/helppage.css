@@ -91,21 +91,70 @@ h1 {
   padding: 20px;
 }
 
-.box {
+.box1,
+.box2,
+.box3,
+.box4 {
   background-color: var(--cybergrape);
   height: 60vh;
   padding: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border: var(--mountbattenpink) solid 5px;
   flex: 1;
   transition: 1s;
   border-radius: 20px;
 }
 
-.box:hover {
+.box1:hover {
   flex: 3;
+  cursor: pointer;
+}
+
+.box1:hover #text1 {
+  opacity: 1;
+}
+
+.box2:hover {
+  flex: 3;
+  cursor: pointer;
+}
+
+.box2:hover #text2 {
+  opacity: 1;
+}
+
+.box3:hover {
+  flex: 3;
+  cursor: pointer;
+}
+
+.box3:hover #text3 {
+  opacity: 1;
+}
+
+.box4:hover {
+  flex: 3;
+  cursor: pointer;
+}
+
+.box4:hover #text4 {
+  opacity: 1;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s;
+  background-color: var(--mountbattenpink);
+  color: var(--floralwhite);
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .donate {
