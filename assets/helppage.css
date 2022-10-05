@@ -1,8 +1,3 @@
-* {
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
 :root {
   --floralwhite: #fdfaee;
   --spanishpink: #fbc2c3;
@@ -11,9 +6,13 @@
   --mountbattenpink: #9c849b;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Fredoka One", cursive;
-  background-color: #fdfaee;
+  background-color: var(--floralwhite);
   text-align: center;
 }
 
@@ -61,11 +60,6 @@ li:hover {
   color: #fbc2c3;
 }
 
-.body {
-  margin: 0 auto;
-  padding: 50px;
-}
-
 body {
   margin: 0 auto;
 }
@@ -73,18 +67,6 @@ body {
 #logo {
   max-height: 70px;
   padding-left: 10px;
-}
-
-.paw {
-  height: 200px;
-  filter: invert(55%) sepia(14%) saturate(984%) hue-rotate(246deg)
-    brightness(84%) contrast(87%);
-}
-
-.paw:hover {
-  filter: invert(82%) sepia(14%) saturate(328%) hue-rotate(253deg)
-    brightness(95%) contrast(84%) drop-shadow(3px 5px 2px rgba(150, 111, 155));
-  cursor: pointer;
 }
 
 h1 {
@@ -95,40 +77,49 @@ h1 {
   border-radius: 20px;
 }
 
-h2 {
-  color: var(--frenchlilac);
-  font-size: 25pt;
-}
-
-h3 {
-  color: var(--frenchlilac);
-  font-size: 18pt;
-}
-
-.second {
-  color: #fdfaee;
-  background-color: var(--frenchlilac);
-  border-radius: 20px;
-  padding: 10px;
-  font-size: 24pt;
-  text-align: center;
-  display: inline-grid;
+#title {
+  padding-top: 70px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section {
-  height: 100vh;
-  scroll-snap-align: start;
+.containerContent {
+  background-color: var(--mountbattenpink);
+  margin-top: 10px;
+  display: flex;
+  padding: 20px;
 }
 
-.container {
-  padding: 10%;
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-  overflow-y: scroll;
+.box {
+  background-color: var(--cybergrape);
+  height: 60vh;
+  padding: 25px;
+  border: var(--mountbattenpink) solid 5px;
+  flex: 1;
+  transition: 1s;
 }
 
-.container::-webkit-scrollbar {
-  display: none;
+.box:hover {
+  flex: 3;
+}
+
+#donate {
+  background-image: url("./images/donate.png");
+  background-repeat: no-repeat;
+}
+
+#volunteer {
+  background-image: url("./images/volunteer.png");
+  background-repeat: no-repeat;
+}
+
+#guides {
+  background-image: url("./images/guides.png");
+  background-repeat: no-repeat;
+}
+
+#merch {
+  background-image: url("./images/merch.png");
+  background-repeat: no-repeat;
 }
