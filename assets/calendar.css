@@ -75,16 +75,17 @@ body {
 }
 
 #container {
-  background-color: #fdfaee;
+  background-color: grey;
   margin: 10px;
+  border-radius: 15px;
 }
 
 /* Grid */
 #calendar {
+  border-radius: 15px;
   max-height: 90vh;
   margin-top: 10vh;
   padding: 10px;
-  border: solid;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(8, 1fr);
@@ -92,10 +93,36 @@ body {
 }
 
 .day {
+  background-color: #fdfaee;
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-self: center;
+  height: auto;
+  width: auto;
 }
+
+.time {
+  background-color: #fdfaee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+/* Activity Styling */
+
+.outer-class-div {
+  background-color: #fdfaee;
+  
+}
+
+.inner-class-div {
+  background-color: #6d4776;
+  border-radius: 10px;
+  padding: 3px;
+}
+
 
 /* Days */
 #monday {
@@ -235,12 +262,6 @@ body {
   grid-row-end: 7;
 }
 
-/* Activity Styling */
 
-.class {
-  background-color: #6d4776;
-  border-radius: 10px;
-
-}
 
 
