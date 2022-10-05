@@ -63,7 +63,7 @@ li:hover {
 
 .body {
   margin: 0 auto;
-  padding: 50px;
+  padding: 30px;
 }
 
 body {
@@ -91,7 +91,7 @@ h1 {
   background-color: var(--frenchlilac);
   color: var(--floralwhite);
   font-size: 50pt;
-  padding: 40px;
+  padding: 50px;
   border-radius: 20px;
 }
 
@@ -105,14 +105,21 @@ h3 {
   font-size: 18pt;
 }
 
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .second {
   color: #fdfaee;
   background-color: var(--frenchlilac);
   border-radius: 20px;
   padding: 10px;
   font-size: 24pt;
-  text-align: center;
-  display: inline-grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -123,7 +130,7 @@ section {
 }
 
 .container {
-  padding: 10%;
+  padding: 15%;
   scroll-snap-type: y mandatory;
   height: 100vh;
   overflow-y: scroll;
