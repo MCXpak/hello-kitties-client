@@ -19,7 +19,7 @@ async function displayCatsData() {
     const catBreed = document.getElementsByClassName('cat-breed');
     //console.log("catName", catName)
 
-    for (let i = 0; i < cats.length; i++) {
+    for (let i = 0; i < 6; i++) {
         //console.log(cat["name"])
         //console.log("hi", catNames[i])
         //console.log("hey", cats[i])
@@ -33,19 +33,12 @@ async function displayCatsData() {
         catFavFood[i].innerHTML = 'Favourite food: ' + cats[i]['favFood'];
         // console.log(catBreed[i]);
         // console.log(cats[i]['breed'])
-        catBreed[i].innerHTML = 'Breed: ' + cats[i]['breed'];
-
-        
+        catBreed[i].innerHTML = 'Breed: ' + cats[i]['breed'];        
     }
 
 }
 
 displayCatsData();
-
-
-
-
-
 
 // Animation
 gsap.from(".cat-box", {
