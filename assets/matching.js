@@ -121,7 +121,7 @@ rejectBtn.addEventListener("click", async () => {
     moveLeft()
     deleteDiv(description1);
     removeImg();
-    await sleep(400)
+    await sleep(800)
     index ++
     displayData(index);
 

@@ -149,7 +149,7 @@ body {
     border-radius: 20px;
     /* margin: 2%; */
     color: white;
-    font-size: 80px;
+    font-size: 70px;
     /* position: absolute; */
     z-index:1;
     padding: 3%;
@@ -171,7 +171,7 @@ body {
     width: 87%;
     height: 60%;
     /* margin: 2%; */
-    border-radius: 20px;
+    border-radius: 40px;
     z-index: 2;
     padding: 2%;
     /* box-shadow:  -5px 3px -3px black; */
