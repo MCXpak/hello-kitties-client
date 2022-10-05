@@ -1,0 +1,213 @@
+:root {
+  --floralwhite: #fdfaee;
+  --spanishpink: #fbc2c3;
+  --frenchlilac: #966f9b;
+  --cybergrape: #6d4776;
+  --mountbattenpink: #9c849b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Fredoka One", cursive;
+  background-color: var(--floralwhite);
+  text-align: center;
+}
+
+#container-header {
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  will-change: transform;
+  background-color: var(--spanishpink);
+  /* border: 1px solid black; */
+}
+
+.navigation-bar {
+  list-style: none;
+  display: flex;
+  padding-left: 10px;
+  color: var(--frenchlilac);
+}
+
+.navigation-bar a {
+  display: table;
+  padding: 0px 20px;
+}
+
+.navigation-bar li {
+  background-color: var(--frenchlilac);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+  color: var(--floralwhite);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+li:hover {
+  color: #fbc2c3;
+}
+
+body {
+  margin: 0 auto;
+}
+
+#logo {
+  max-height: 70px;
+  padding-left: 10px;
+}
+
+h1 {
+  background-color: var(--frenchlilac);
+  color: var(--floralwhite);
+  font-size: 50pt;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+#title {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerContent {
+  background-color: var(--mountbattenpink);
+  margin-top: 10px;
+  display: flex;
+  padding: 20px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  background-color: var(--cybergrape);
+  height: 60vh;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: var(--mountbattenpink) solid 5px;
+  flex: 1;
+  transition: 1s;
+  border-radius: 20px;
+}
+
+.box1:hover {
+  flex: 3;
+  cursor: pointer;
+}
+
+.box1:hover #text1 {
+  opacity: 1;
+}
+
+.box2:hover {
+  flex: 3;
+  cursor: pointer;
+}
+
+.box2:hover #text2 {
+  opacity: 1;
+}
+
+.box3:hover {
+  flex: 3;
+  cursor: pointer;
+}
+
+.box3:hover #text3 {
+  opacity: 1;
+}
+
+.box4:hover {
+  flex: 3;
+  cursor: pointer;
+}
+
+.box4:hover #text4 {
+  opacity: 1;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s;
+  background-color: var(--mountbattenpink);
+  color: var(--floralwhite);
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.donate {
+  background-color: var(--mountbattenpink);
+  color: var(--floralwhite);
+  font-size: 40px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#donate {
+  background-image: url("./images/donate.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.volunteer {
+  background-color: var(--mountbattenpink);
+  color: var(--floralwhite);
+  font-size: 32px;
+  border-radius: 10px;
+  padding: 5px;
+}
+#volunteer {
+  background-image: url("./images/volunteer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.guides {
+  background-color: var(--mountbattenpink);
+  color: var(--floralwhite);
+  font-size: 40px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#guides {
+  background-image: url("./images/guides.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.merch {
+  background-color: var(--mountbattenpink);
+  color: var(--floralwhite);
+  font-size: 40px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#merch {
+  background-image: url("./images/merch.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}

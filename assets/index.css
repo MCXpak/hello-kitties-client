@@ -89,7 +89,7 @@ body {
 
 h1 {
   background-color: var(--frenchlilac);
-  color: #fdfaee;
+  color: var(--floralwhite);
   font-size: 50pt;
   padding: 40px;
   border-radius: 20px;
