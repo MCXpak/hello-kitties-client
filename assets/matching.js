@@ -7,6 +7,39 @@ const imgInsert = document.getElementById("contentContainer")
 const nameImg = document.getElementById("name-imgDiv")
 const description1 = document.getElementById("description1")
 const numMatches = document.getElementById("numMatches")
+const form = document.getElementById("enterEmail")
+const savedPets = document.getElementById("likeBtn")
+
+
+let arrayCats = []
+let emailCatsObj = {}
+let likedCats = []
+let savedCats = []
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    const emailValue = e.target.email.value;
+
+    emailCatsObj = {}
+    emailCatsObj.email = emailValue
+    // emailCatsObj.cats = likedCats
+    console.log(emailCatsObj)
+
+    alert("Email registered")
+
+
+})
+
+savedPets.addEventListener("click", () => {
+    // e.preventDefault()
+    emailCatsObj.cats = likedCats
+    console.log(emailCatsObj)
+    savedCats.push(emailCatsObj)
+    // console.log(savedCats)
+    sendData(savedCats)
+})
+
+
 let index = 0
 let savedArr = []
 const fetchData = async () => {
@@ -95,7 +128,7 @@ const sendData = async (array) => {
     try {
         const response = await fetch("http://localhost:3000/saved", options)
         if(response.status == 200) {
-            alert("Pet Saved");
+            // alert("Pet Saved");
             // location.href = "index.html"
         }
     } catch (error) {
@@ -129,16 +162,21 @@ const returnPosition = () => {
 
 likeBtn.addEventListener("click", async () => {
     data = await fetchData();
+    // console.log(emailArr)
     moveRight();
     await sleep(400)
     deleteDiv(description1);
     removeImg()
     farLeft();
     await sleep(400)
-    const liked = data[index]
+    let liked = data[index]
+    // console.log(liked)
+    likedCats.push(liked)
+
+    // liked.email = emailArr[0]
     // savedArr.push(liked);
     // console.log(savedArr)
-    sendData(liked)
+    // sendData(liked)
     index ++
     displayData(index)
     returnPosition();
@@ -153,3 +191,38 @@ rejectBtn.addEventListener("click", async () => {
     displayData(index);
     returnPosition();
 })
+
+
+
+// const savedCats = [
+//    {
+//         email: "asdf@gmail.com",
+//         cats: [
+//             {
+//                 name: "Fluffy",
+//                 gender: "Female",
+//                 id: 0,
+//             },
+//             {
+//                 name: "Garfield",
+//                 gender: "Male",
+//                 id: 1,
+//             }
+//         ]
+//     },
+//     {
+//         email: "asdf@gmail.com",
+//         cats: [
+//             {
+//                 name: "Fluffy",
+//                 gender: "Female",
+//                 id: 0,
+//             },
+//             {
+//                 name: "Garfield",
+//                 gender: "Male",
+//                 id: 1,
+//             }
+//         ]
+//     },
+// ];
