@@ -93,6 +93,7 @@ const sendData = async (e) => {
         console.log(res)
         window.location.href = ("http://localhost:5500/matching.html")
     }
+
 }
 
 container.addEventListener('scroll', () => {
