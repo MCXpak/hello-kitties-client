@@ -91,7 +91,7 @@ const sendData = async (e) => {
 
         const res = await fetch("http://localhost:3000/matching", options)
         console.log(res)
-        window.location.href = ("http://localhost:5500/matching.html")
+        window.location.href = ("./matching.html")
     }
 
 }
