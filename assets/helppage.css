@@ -26,6 +26,7 @@ html {
   top: 0;
   will-change: transform;
   background-color: var(--spanishpink);
+  z-index: 1;
   /* border: 1px solid black; */
 }
 
