@@ -12,7 +12,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    
     background-color: #FDFAEE;
     accent-color: var(--checked-color);
 }
@@ -79,6 +78,7 @@ li:hover {
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: local;
+    background-position: center;
     max-height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
