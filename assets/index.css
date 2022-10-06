@@ -140,3 +140,7 @@ section {
 .container::-webkit-scrollbar {
   display: none;
 }
+
+#paw-link{
+  width: 215px;
+}
