@@ -145,7 +145,7 @@ function sleep(ms) {
 }
 
 const moveRight = () => {
-    gsap.to(dispDiv, {rotation: 90, y: 2000, x: 2500, duration: 1.5})
+    gsap.to(dispDiv, {rotation: 90, y: 2000, x: 2500, duration: 1})
 }
 
 const moveLeft = () => {
