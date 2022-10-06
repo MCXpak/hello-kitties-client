@@ -90,8 +90,7 @@ const sendData = async (e) => {
         }
 
         const res = await fetch("http://localhost:3000/matching", options)
-        const jsonRes = await res.json()
-        console.log(jsonRes)
+        console.log(res)
         window.location.href = ("http://localhost:5500/matching.html")
     }
 }
