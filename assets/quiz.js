@@ -56,7 +56,12 @@ previous.addEventListener('click', () => {
 const onFormSubmit = () => {
     const valArr = []
     for(let i = 1; i <= sections.length; i++){
-        valArr.push(document.querySelector(`input[name="action${i}"]:checked`).value)
+        try {
+            valArr.push(document.querySelector(`input[name="action${i}"]:checked`).value)
+        } catch {
+            alert(`Not all quiz questions have been completed, check questions starting from question ${i}`)
+            return false
+        }
     }
     return valArr
 }
@@ -68,23 +73,27 @@ submitButton.addEventListener('click', (e) => {
 const sendData = async (e) => {
     e.preventDefault()
     formAnswerArray = onFormSubmit()
-    console.log(formAnswerArray)
-    //let testArr = ['3', '4', '2', '4', '5', '1', '3', '5', '2', '4', '5', '4']
-    let obj = createDataObject(formAnswerArray)
-    console.log(obj)
+    if(!formAnswerArray){
+        console.log("Cannot send data, incomplete quiz...")
+    } else {
+        console.log(formAnswerArray)
+        //let testArr = ['3', '4', '2', '4', '5', '1', '3', '5', '2', '4', '5', '4']
+        let obj = createDataObject(formAnswerArray)
+        console.log(obj)
 
-    const options = {
-        method: 'PUT',
-        headers: {
-            'Content-type': 'application/json'
-        },
-        body: JSON.stringify(obj)
+        const options = {
+            method: 'PUT',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(obj)
+        }
+
+        const res = await fetch("http://localhost:3000/matching", options)
+        const jsonRes = await res.json()
+        console.log(jsonRes)
+        window.location.href = ("http://localhost:5500/matching.html")
     }
-
-    const res = await fetch("http://localhost:3000/matching", options)
-    const jsonRes = await res.json()
-    console.log(jsonRes)
-    window.location.href = ("http://localhost:5500/matching.html")
 }
 
 container.addEventListener('scroll', () => {
@@ -98,10 +107,24 @@ container.addEventListener('scroll', () => {
             console.log(index)
        }
     }
+    //Check if next and previous should be shown based on question
+    if (index == 0){
+        previous.style.opacity = 0;
+        previous.style.pointerEvents = "none";
+    } else {
+        previous.style.opacity = 1;
+        previous.style.pointerEvents = "auto";
+    }
     if(index == sections.length-1){
         submitButton.style.opacity = 1;
-        submitButton.style.pointerEvents = "auto";
+        submitButton.style.pointerEvents = "auto";  
+        next.style.opacity = 0;
+        next.style.pointerEvents = "none"; 
+    } else {
+        next.style.opacity = 1;
+        next.style.pointerEvents = "auto"; 
     }
+
 })
 
 const createDataObject = (arr) => {
