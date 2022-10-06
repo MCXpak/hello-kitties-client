@@ -23,7 +23,15 @@ async function displayCatsData() {
         //console.log(cat["name"])
         //console.log("hi", catNames[i])
         //console.log("hey", cats[i])
-        catNames[i].innerHTML = cats[i]['name'];
+
+        const link = document.createElement('a');
+        link.classList.add('cat-link');
+        link.href = `singlecat.html?id=${cats[i]['id']}`;
+        link.textContent = cats[i][['name']];
+        catNames[i].innerHTML = "";
+        catNames[i].appendChild(link);
+
+        //catNames[i].innerHTML = cats[i]['name'];
         //document.appendChild(catName)
         //console.log(catImg);
         catImg[i].src = cats[i]['url'];
@@ -80,7 +88,15 @@ async function displayNineRandomCats() {
     const catBreed = document.getElementsByClassName('cat-breed');
 
     for (let i = 0; i < newCats.length; i ++) {
-        catNames[i].innerHTML = newCats[i]['name'];
+
+        const link = document.createElement('a');
+        link.classList.add('cat-link');
+        link.href = `singlecat.html?id=${newCats[i]['id']}`;
+        link.textContent = newCats[i][['name']];
+        catNames[i].innerHTML = "";
+        catNames[i].appendChild(link);
+
+        //catNames[i].innerHTML = newCats[i]['name'];
         catImg[i].src = newCats[i]['url'];
         catGender[i].innerHTML = 'Gender: ' + newCats[i]['gender'];
         catAge[i].innerHTML = 'Age: ' + newCats[i]['age'];
