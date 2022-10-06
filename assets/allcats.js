@@ -19,7 +19,7 @@ async function displayCatsData() {
     const catBreed = document.getElementsByClassName('cat-breed');
     //console.log("catName", catName)
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 9; i++) {
         //console.log(cat["name"])
         //console.log("hi", catNames[i])
         //console.log("hey", cats[i])
