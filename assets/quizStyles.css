@@ -129,7 +129,8 @@ li:hover {
     width: fit-content;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
+    justify-content: end;
 }
 
 .question-option {
@@ -145,6 +146,7 @@ li:hover {
 label {
     font-size: 25px;
     margin-bottom: 15px;
+    text-align: center;
 }
 #quiz-submit{
     position: absolute;
