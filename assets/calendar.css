@@ -121,7 +121,12 @@ body {
   background-color: #6d4776;
   border-radius: 10px;
   padding: 3px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s;
 }
+
+/* .inner-class-div:hover {
+  transform: scale(2);
+} */
 
 
 /* Days */
@@ -237,8 +242,6 @@ body {
   grid-row-start: 1;
   grid-row-end: 2;
 }
-
-
 
 /* Activities */
 #cat-bathing {
