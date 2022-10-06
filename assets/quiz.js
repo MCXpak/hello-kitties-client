@@ -98,10 +98,24 @@ container.addEventListener('scroll', () => {
             console.log(index)
        }
     }
+    //Check if next and previous should be shown based on question
+    if (index == 0){
+        previous.style.opacity = 0;
+        previous.style.pointerEvents = "none";
+    } else {
+        previous.style.opacity = 1;
+        previous.style.pointerEvents = "auto";
+    }
     if(index == sections.length-1){
         submitButton.style.opacity = 1;
-        submitButton.style.pointerEvents = "auto";
+        submitButton.style.pointerEvents = "auto";  
+        next.style.opacity = 0;
+        next.style.pointerEvents = "none"; 
+    } else {
+        next.style.opacity = 1;
+        next.style.pointerEvents = "auto"; 
     }
+
 })
 
 const createDataObject = (arr) => {
