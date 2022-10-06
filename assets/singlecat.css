@@ -14,7 +14,7 @@
 html {
 font-family: "Fredoka One", cursive;
 background-color: #fdfaee;
-text-align: center;
+/* text-align: center; */
 }
 
 #container-header {
@@ -70,9 +70,60 @@ body {
 margin: 0 auto;
 }
 
+nav{
+    margin-bottom: 70px
+}
+
+#cat-container {
+    /* margin: 2em 2em 2em 2em ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100vw;
+    /* background-color: var(--frenchlilac); */
+}
+
+#single-cat{
+    /* margin-top: 150px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua; */
+    height: 450px;
+    width: 80vw;
+}
+
+#cat-info{
+    border-radius: 10px;
+    background-color:#fbc2c3;
+    height: 420px;
+    width: 50vw;
+    margin-right: 2vw;
+}
+
 #cat {
-    
-    height: 50vh;
-    width: 50vh;
-    background-color: var(--frenchlilac);
+    border-radius: 10px;
+    height: 420px;
+    width: 20vw;
+    margin-left: 2vw;
+}
+
+.cat-data {
+    margin: 0 auto;
+    height: 420px;
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+#cat-name{
+    font-size: 40px;
+}
+
+.cat-stat{
+    font-size: 20px;
 }
