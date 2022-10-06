@@ -1,7 +1,7 @@
 # Take my paw
 ### *built by* Team Hello Kitties (Mourad, Ryan, Andrés, Ayesha and Chiara)
 
-![take my paw logo](/hello-kitties-client/assets/logo.png)
+![take my paw logo](./assets/logo.png)
 
 This web app provides users the experience to match prospective pet adopters with their furrever pet through an interactive personality quiz. It will then match to an ideal pet to adopt from a cat shelter.
 
