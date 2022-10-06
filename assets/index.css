@@ -54,6 +54,11 @@ html {
   color: var(--floralwhite);
 }
 
+a {
+  min-height: fit-content;
+  overflow: visible;
+}
+
 a:link {
   text-decoration: none;
 }
