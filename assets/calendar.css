@@ -83,7 +83,7 @@ body {
 /* Grid */
 #calendar {
   border-radius: 15px;
-  max-height: 90vh;
+  max-height: fit-content;
   margin-top: 10vh;
   padding: 10px;
   display: grid;
@@ -114,6 +114,7 @@ body {
 
 .outer-class-div {
   background-color: #fdfaee;
+  min-height: 130px;
 }
 
 .inner-class-div {
@@ -121,6 +122,7 @@ body {
   border-radius: 10px;
   padding: 3px;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s;
+  min-height: 130px;
 }
 
 /* .inner-class-div:hover {
