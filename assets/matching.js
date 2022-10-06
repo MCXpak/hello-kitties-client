@@ -11,7 +11,7 @@ const form = document.getElementById("enterEmail")
 const savedPets = document.getElementById("likeBtn")
 
 
-let arrayCats =[]
+let arrayCats = []
 let emailCatsObj = {}
 let likedCats = []
 let savedCats = []
@@ -31,7 +31,7 @@ form.addEventListener("submit", (e) => {
 })
 
 savedPets.addEventListener("click", () => {
-
+    // e.preventDefault()
     emailCatsObj.cats = likedCats
     console.log(emailCatsObj)
     savedCats.push(emailCatsObj)
