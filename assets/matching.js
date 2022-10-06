@@ -6,8 +6,9 @@ const description = document.getElementById("descriptionDiv");
 const imgInsert = document.getElementById("contentContainer")
 const nameImg = document.getElementById("name-imgDiv")
 const description1 = document.getElementById("description1")
+const numMatches = document.getElementById("numMatches")
 let index = 0
-    
+let savedArr = []
 const fetchData = async () => {
     const response = await fetch(`http://localhost:3000/tinder`)
     const data = await response.json();
@@ -57,6 +58,7 @@ const removeImg = () => {
 
 const displayData = async (index) => {
     const data = await fetchData();
+    numMatches.textContent = `${data.length} matches!`
 
     let cardContent = data[index];
     if (data.length == index || index > data.length) {
@@ -79,6 +81,28 @@ const displayData = async (index) => {
 }
 
 displayData(index);
+
+const sendData = async (array) => {
+
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-type': 'application/json'
+        },
+        body: JSON.stringify(array)
+    }
+
+    try {
+        const response = await fetch("http://localhost:3000/saved", options)
+        if(response.status == 200) {
+            alert("Pet Saved");
+            // location.href = "index.html"
+        }
+    } catch (error) {
+        console.log("error")
+    }
+}
+
 
 
 function sleep(ms) {
@@ -104,16 +128,19 @@ const returnPosition = () => {
 }
 
 likeBtn.addEventListener("click", async () => {
-    data = fetchData();
+    data = await fetchData();
     moveRight();
     await sleep(400)
     deleteDiv(description1);
     removeImg()
     farLeft();
     await sleep(400)
+    const liked = data[index]
+    // savedArr.push(liked);
+    // console.log(savedArr)
+    sendData(liked)
     index ++
-    displayData(index);
-
+    displayData(index)
     returnPosition();
 })
 
@@ -124,6 +151,5 @@ rejectBtn.addEventListener("click", async () => {
     await sleep(800)
     index ++
     displayData(index);
-
     returnPosition();
 })

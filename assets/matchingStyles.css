@@ -20,11 +20,49 @@ body {
 
 #mainContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
     overflow: clip;
     margin-top: 5%;
 
+}
+
+#infoBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #9C849B;
+    width: 50%;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+#infoHalf1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#infoHalf2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#savedBtn li {
+    background-color: var(--cybergrape);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    color: var(--floralwhite);
 }
 
 #primaryDiv {

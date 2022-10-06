@@ -67,10 +67,10 @@ submitButton.addEventListener('click', (e) => {
 
 const sendData = async (e) => {
     e.preventDefault()
-    formAnswerArray = onFormSubmit()
-    console.log(formAnswerArray)
-    //let testArr = ['3', '4', '2', '4', '5', '1', '3', '5', '2', '4', '5', '4']
-    let obj = createDataObject(formAnswerArray)
+    // formAnswerArray = onFormSubmit()
+    // console.log(formAnswerArray)
+    let testArr = ['3', '4', '2', '4', '5', '1', '3', '5', '2', '4', '5', '4']
+    let obj = createDataObject(testArr)
     console.log(obj)
 
     const options = {
@@ -82,8 +82,8 @@ const sendData = async (e) => {
     }
 
     const res = await fetch("http://localhost:3000/matching", options)
-    const jsonRes = await res.json()
-    console.log(jsonRes)
+    // const jsonRes = await res.json()
+    // console.log(jsonRes)
     window.location.href = ("http://localhost:5500/matching.html")
 }
 
