@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/allcats.js" defer></script>
+    <script src="./assets/saved.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,7 +33,12 @@
         </ul>
     </header>
     <div id="main-container">
-        <h1>Our Cats</h1>
+        <h1>Saved Cats</h1>
+        <div id="email">Enter your email so you can see your saved cats later or if you are a returning adopter</div>
+        <form id="searchWish">
+            <input type="text" name="keyword" id="keyword" placeholder="Enter e-mail">
+            <input id="submitEmail" type="submit" value="Submit">
+        </form>
 
         <div id="cats-container">
 
