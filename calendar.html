@@ -16,6 +16,18 @@
     <script defer src="./assets/calendar.js"></script>
   </head>
   <body>
+    <div id="booking-container">
+      <div id="booking-div">
+        <form id="booking-form">
+          <p>Available spaces: 10/12</p>
+          <label for="name">Enter your name:</label>
+          <input class="form-input" id="name" type="text">
+          <label for="email">Enter your email:</label>
+          <input class="form-input" id="email" type="email">
+          <button class="booking-button" id="submit-form">BOOK</button>
+        </form>
+      </div>
+    </div>
     <nav>
       <header id="container-header">
         <a href="./index.html"
@@ -31,6 +43,13 @@
           <a href="./helppage.html">
             <li>HOW CAN I HELP</li>
           </a>
+          <a href="./saved.html">
+            <li>SAVED PETS</li>
+          </a>
+          <a href="./calendar.html">
+            <li>WORKSHOPS</li>
+          </a>
+        </ul>
         </ul>
       </header>
     </nav>
@@ -83,23 +102,41 @@
         </div>
         <div class="outer-class-div" id="cat-bathing">
           <div class="inner-class-div">
-            <p class="activity-name">Cat Bathing</p>
-            <p class="date-time">05/10/2022</p>
-            <p class="date-time">4pm</p>
+            <div class="basic-info">
+              <p class="activity-name">Cat Bathing</p>
+              <p class="date-time">05/10/2022</p>
+              <p class="date-time">4pm</p>
+            </div>
+            <div class="desc">
+              <p>In this class you will learn how to safely give your cat a bath</p>
+              <button class="book">Book</button>
+            </div>
           </div>
         </div>
         <div class="outer-class-div" id="dog-tricks">
           <div class="inner-class-div">
-            <p class="activity-name">Dog Tricks</p>
-            <p class="date-time">04/10/2022</p>
-            <p class="date-time">11am</p>
+            <div class="basic-info">
+              <p class="activity-name">Cat Tricks</p>
+              <p class="date-time">04/10/2022</p>
+              <p class="date-time">11am</p>
+            </div>
+            <div class="desc">
+              <p>Teach your cat how to do tricks!</p>
+              <button class="book">Book</button>
+            </div>
           </div>
         </div>
         <div class="outer-class-div" id="parrot-speech">
           <div class="inner-class-div">
-            <p class="activity-name">Parrot Speech</p>
-            <p class="date-time">07/10/2022</p>
-            <p class="date-time">12pm</p>
+            <div class="basic-info">
+              <p class="activity-name">Nail trimming</p>
+              <p class="date-time">07/10/2022</p>
+              <p class="date-time">12pm</p>
+            </div>
+            <div class="desc">
+              <p>Learn how to safely trim your cats nails!</p>
+              <button class="book">Book</button>
+            </div>
           </div>
         </div>
       </div>
