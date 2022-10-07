@@ -68,6 +68,11 @@ a:link {
     text-decoration: none; 
 }
 
+.navigation-bar li:hover {
+    color: #FBC2C3;
+}
+
+
 .nav:hover {
     color: #FBC2C3;
 }
