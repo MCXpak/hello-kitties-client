@@ -127,3 +127,20 @@ nav{
 .cat-stat{
     font-size: 20px;
 }
+
+#adopt {
+    font-family: "Fredoka One", cursive;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    color: #fdfaee;
+    background-color: var(--frenchlilac);
+    border: none;
+    font-size: 16px;
+}
+
+#adopt:hover{
+    /* color:#fbc2c3; */
+    cursor: pointer;
+    transform: scale(1.1);
+}
