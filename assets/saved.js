@@ -53,7 +53,7 @@ async function getCatsData() {
 
 // getCatsData()
 const clearScreen = () => {
-    for(let i=0; i<9; i++) {
+    for(let i=0; i<6; i++) {
         catNames[i].innerHTML = ""
         catImg[i].src = ""
         catGender[i].innerHTML = ""

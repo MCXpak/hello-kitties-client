@@ -88,7 +88,7 @@ a:link {
 #cats-container {
     display: grid;
     grid-template-columns: 360px 360px 360px;
-    grid-template-rows: repeat(3, 600px);
+    grid-template-rows: repeat(2, 600px);
     gap: 20px;
     margin-top: 30px;
     /* border: 1px solid black; */
@@ -97,7 +97,7 @@ a:link {
     align-items: stretch;
     align-content: center;
     grid-auto-rows: 500px;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
 }
 
 .cat-box {
