@@ -67,7 +67,8 @@ body {
 a:link { 
     text-decoration: none; 
 }
-li:hover {
+
+.navigation-bar li:hover {
     color: #FBC2C3;
 }
 
