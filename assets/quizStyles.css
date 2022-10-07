@@ -70,7 +70,25 @@ li:hover {
 #logo {
     max-height: 70px;
     padding-left: 10px;
-  }
+}
+
+.progress-border {
+    background-color: #C9BBC8;
+    position: fixed;
+    width: 100vw;
+    height: 15px;
+    top: 70px;
+}
+
+.progress {
+    background-color: #966f9b;
+    position: fixed;
+    height: 15px;
+    top: 70px;
+    border-radius: 7px;
+    transition: ease-in 0.5s;
+}
+
 
 
 #container {
@@ -97,7 +115,7 @@ li:hover {
     margin-bottom: calc(50vh - 150px);
     background-color: #966F9B;
     box-shadow: 0 0 2px black;
-    padding: 10vh 20vh;
+    padding: 3vh;
     margin-left: 10vh;
     margin-right: 10vh;
     border-radius: 15px;

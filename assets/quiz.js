@@ -5,6 +5,7 @@ const next = document.getElementById('next')
 const previous = document.getElementById('previous')
 const container = document.getElementById('container')
 const submitButton = document.getElementById('quiz-submit')
+const progressBar = document.querySelector('.progress')
 
 let questions = [
     "I often go out to socialise",
@@ -42,6 +43,7 @@ next.addEventListener('click', () => {
         gsap.to(container, { duration: 1, scrollTo: { y: sections[index], offsetY: container.getBoundingClientRect().height/2 - sections[index].getBoundingClientRect().height/2}})
         console.log(container.getBoundingClientRect().height/2 - sections[index].getBoundingClientRect().height/2)
     }
+    updateProgress()
 })
 
 //Button to move to previous question
@@ -51,6 +53,7 @@ previous.addEventListener('click', () => {
         console.log(index)
         gsap.to(container, { duration: 1, scrollTo: { y: sections[index], offsetY: container.getBoundingClientRect().height/2 - sections[index].getBoundingClientRect().height/2} })
     }
+    updateProgress()
 })
 
 const onFormSubmit = () => {
@@ -124,8 +127,15 @@ container.addEventListener('scroll', () => {
         next.style.opacity = 1;
         next.style.pointerEvents = "auto"; 
     }
+    updateProgress()
 
 })
+
+const updateProgress = () => {
+    let progress = window.innerWidth/11 * index
+    progressBar.style.width = `${progress}px`;
+    console.log(progress)
+}
 
 const createDataObject = (arr) => {
     const obj = {}
