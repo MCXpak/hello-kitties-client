@@ -184,3 +184,7 @@ cursor: pointer;
 .cat-link:hover{
     color:#6D4776
 }
+
+.cat-name {
+    text-decoration: underline;
+}
