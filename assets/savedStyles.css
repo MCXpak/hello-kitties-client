@@ -67,6 +67,10 @@ body {
 a:link { 
     text-decoration: none; 
 }
+li:hover {
+    color: #FBC2C3;
+}
+
 
 .nav:hover {
     color: #FBC2C3;
