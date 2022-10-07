@@ -81,3 +81,9 @@ function capitalise(key){
 const catId = getCatId();
 displayData(catId)
 
+const adoptBtn = document.querySelector('#adopt');
+adoptBtn.addEventListener('click', () => {
+    let catName = document.querySelector('#cat-name').textContent;
+    let alertText = `Thank you for your interest on ${catName}\nPlease call us on 07766655443`
+    alert(alertText)
+})
